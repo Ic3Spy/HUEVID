@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<section class="hero-section position-relative">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="hero-content position-relative">
+                    <div class="hero-text p-5">
+                        <h1 class="display-3 fw-light mb-4">Art Through Different Eyes</h1>
+                        <p class="lead mb-4">Experience artwork designed with colorblind accessibility, where art meets inclusive vision</p>
+                        <a href="/Gallery" class="btn btn-outline-dark px-4 py-2">Explore Gallery</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="/images/hero-artwork.jpg" alt="Featured Artwork" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="fw-light mb-4">HUEVID Art Gallery</h2>
+                <p class="text-muted">
+                    Where art transcends color barriers. Our gallery specializes in presenting artwork
+                    that's accessible to everyone, including those with color vision deficiencies.
+                    Each piece is carefully curated to ensure its beauty can be appreciated through different perspectives.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Artworks Section -->
+<section class="featured-works py-5 bg-light">
+    <div class="container">
+        <h3 class="fw-light text-center mb-5">Featured Artworks</h3>
+        <div class="row g-4">
+            @* Add foreach loop here when connected to actual data *@
+            <div class="col-md-4">
+                <div class="artwork-card">
+                    <img src="/images/artwork-1.jpg" alt="Artwork 1" class="img-fluid mb-3">
+                    <h4 class="fw-light">Artwork Title</h4>
+                    <p class="text-muted">Artist Name</p>
+                </div>
+            </div>
+            <!-- Repeat for other artworks -->
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h3 class="fw-light mb-4">Experience Art Differently</h3>
+                <p class="mb-4">Join us in celebrating inclusive art that speaks to everyone</p>
+                <a href="/Gallery" class="btn btn-dark px-4 py-2">View Gallery</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,80 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 50%;
+}
+
+/* Artwork Cards */
+.artwork-card {
+    transition: transform 0.3s ease;
+}
+
+    .artwork-card:hover {
+        transform: translateY(-5px);
+    }
+
+/* General Styles */
+.fw-light {
+    font-weight: 300 !important;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+        position: relative;
+    }
+}
