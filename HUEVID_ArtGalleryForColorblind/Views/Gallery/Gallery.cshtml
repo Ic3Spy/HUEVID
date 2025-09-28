@@ -1,5 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    var imageFiles = System.IO.Directory.GetFiles("wwwroot/images", "*.txt");
 }
+<h1>GALLERY</h1>
+<div class="gallery-container">
+    <div class="masonry-grid" id="masonry-grid">
+        @foreach (var imgFile in imageFiles)
+        {
+            var imageUrl = System.IO.File.ReadAllText(imgFile).Trim();
+            <div class="masonry-item" id="masonry-item">
+                <div class="artwork-card">
+                    <img src="@imageUrl"
+                         alt="Art preview"
+                         class="gallery-image"
+                         loading="lazy" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
